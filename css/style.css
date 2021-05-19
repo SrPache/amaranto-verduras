@@ -1,0 +1,271 @@
+/* Ctrl + D multiples veces para seleccionar más elementos iguales */
+
+/* *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Globales */
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.img-35{
+    width: 35px;
+    height: 35px;
+}
+.img-70{
+    width: 70px;
+    height: 70px;
+}
+.img-130{
+    width: 140px;
+    height: 140px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.site-header.inicio{
+    background:linear-gradient(to top, rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url(../img/site-header-final3.png);
+    background-position: center center;
+    background-size: cover;
+    /* height: 20vh;
+    min-height: 150px; */
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    padding-top: 10px;
+}
+
+.contenedor{
+    max-width: 1000px;
+}
+
+.contenedor-main{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.barra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.navegacion{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.navegacion h1{
+    color: #eee;
+    text-shadow: 0px 0px 15px black;
+    font-size: 3rem;
+    line-height: 2.5rem;
+    margin: 10px auto;
+}
+
+
+.navegacion h1 span{
+    display: block;
+    font-size: 70%;
+    color: #ddd;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.6);
+}
+
+nav{
+    width: 100%;
+    border-top: 1px solid rgba(255,255,255,0.8);
+    border-bottom: 1px solid rgba(255,255,255,0.8);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgba(0,0,0,0.7);
+}
+
+nav a{
+    text-decoration: none;
+    color: #ddd;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active{
+    text-shadow: 0 0 5px rgba(255,255,255,0.6);
+}
+
+.agradecimiento, .agradecimiento a{
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    color: rgba(255,255,255,0.3);
+    text-align: right;
+    padding: 0;
+}
+
+.agradecimiento{
+    padding: 0 8px 1px 0;
+}
+
+
+main{
+    background-color: #ddd;
+    padding-top: 25px;
+}
+
+#ofertas{
+    border: 1px solid #ccc;
+    background-color: #eee;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#ofertas h2{
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    margin: 0 auto;
+    padding: 20px;
+    text-shadow: 0 0 5px rgba(255,255,255,1);
+    font-family: 'Coda',cursive;
+}
+
+.flex3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 50px;
+    column-gap: 20px;
+    padding: 10px 10px;
+}
+
+.flex3>div{
+    min-width: 100px;
+}
+
+.flex3 div img,
+.flex3 div h3,
+.flex3 div p{
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+}
+
+.contenedor-main>div:last-of-type{
+    text-align: end;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.contenedor-main>div:last-of-type a{
+    text-decoration: none;
+    color:white;
+    background: linear-gradient(green,rgb(0, 134, 0));
+    border-radius: .3rem;
+    padding: 8px 15px;
+    margin-right: 20px;
+}
+
+@media screen and (min-width:768px) {
+    nav{
+        border: 1px solid rgba(255,255,255,0.8);
+        border-radius: .5rem;
+    }
+
+    .barra{
+        padding: 0 15px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    nav{
+        border: 1px solid rgba(255,255,255,0.8);
+        border-radius: .5rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .navegacion{
+        gap:15px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    
+
+}
+
+@media screen and (min-width:1000px) {
+    .contenedor{
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+
+    .navegacion h1 span{
+        display: inline;
+        color: #eee;
+        text-shadow: 0px 0px 15px black;
+        font-size: 3rem;
+        line-height: 2.5rem;
+        margin: 10px auto;
+    }
+    .navegacion{
+        gap:15px;
+        flex-direction: column;
+    }
+    .barra{
+        flex-direction: row;
+        padding: 0 15px;
+    }
+
+    nav{
+        padding-top: 5px;
+        padding-bottom: 5px; 
+    }
+
+    .agradecimiento p{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .flex3{
+        padding: 10px 80px;
+    }
+    
+}
+
+@media screen and (max-height:420px){
+
+    .navegacion h1{
+        font-size: 2.5rem;
+        text-shadow: 0px 0px 15px black;
+        line-height: 2.5rem;
+    }
+
+    .navegacion h1 span{
+        display: inline;
+        font-size: 2.5rem;
+        color: #eee;
+        text-shadow: 0px 0px 15px black;
+    }
+}
